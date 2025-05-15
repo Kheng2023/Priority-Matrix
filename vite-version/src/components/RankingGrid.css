@@ -1,0 +1,96 @@
+.ranking-grid-container {
+  margin: 2em auto;
+  max-width: 95vw;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(60, 60, 120, 0.08);
+  padding: 2em 1em 1em 1em;
+}
+
+.ranking-grid {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  font-family: "Segoe UI", "Roboto", Arial, sans-serif;
+  font-size: 1rem;
+  background: #fafbfc;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ranking-grid th,
+.ranking-grid td {
+  border: 1px solid #e0e0e0;
+  padding: 0.7em 1.2em;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+.ranking-grid th {
+  background: #f4f6fa;
+  font-weight: 600;
+  color: #2d3a4a;
+}
+
+.ranking-grid tbody tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.ranking-grid tbody tr:hover {
+  background: #eaf3ff;
+}
+
+.ranking-grid .self-cell {
+  background: #f0f0f0;
+  color: #bbb;
+  font-style: italic;
+}
+
+.ranking-grid .win-cell {
+  background: #e6ffe6;
+  color: #1b7a1b;
+  font-weight: bold;
+  border: 2px solid #b6eab6;
+}
+
+.ranking-grid .lose-cell {
+  background: #ffeaea;
+  color: #b72a2a;
+  font-weight: bold;
+  border: 2px solid #f3bcbc;
+}
+
+.ranking-grid .total-cell {
+  background: #213547;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-top: 3px solid #535bf2;
+  border-bottom: 2px solid #535bf2;
+}
+
+.ranking-grid tr:last-child th,
+.ranking-grid tr:last-child td {
+  border-bottom: 0;
+}
+
+.ranking-grid th:first-child,
+.ranking-grid td:first-child {
+  position: sticky;
+  left: 0;
+  background: #f4f6fa;
+  z-index: 1;
+}
+
+.ranking-grid th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.ranking-grid-container p {
+  margin-top: 1.5em;
+  color: #666;
+  font-size: 0.98em;
+}
